@@ -1,0 +1,16 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: node:lts-alpine
+      shellScript: docker build .
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: app:${CICD_EXECUTION_SEQUENCE}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
