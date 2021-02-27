@@ -3,7 +3,7 @@ stages:
   steps:
   - runScriptConfig:
       image: node:lts-alpine
-      shellScript: docker build .
+      shellScript: echo "Ok"
 - name: Publish
   steps:
   - publishImageConfig:
