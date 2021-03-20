@@ -54,7 +54,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: api.consultarcnpj.co
+  - host: api.ec2-54-185-63-106.us-west-2.compute.amazonaws.com
     http:
       paths:
         - path: /
