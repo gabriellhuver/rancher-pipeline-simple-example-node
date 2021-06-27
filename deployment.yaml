@@ -54,7 +54,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: api.consultarcnpj.c
+  - host: api.erp-dev.de
     http:
       paths:
         - path: /
