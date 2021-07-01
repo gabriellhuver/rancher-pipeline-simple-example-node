@@ -10,7 +10,8 @@ var networkInterfaces = os.networkInterfaces();
 
 app.get('/api', (req, res) => {
     console.log('[app-teste] - ' + getIPAddress())
-  res.send(getIPAddress())
+
+  res.send(getIPAddress() + " - " + os.hostname() + " - " + JSON.stringify(req.headers))
 })
 
 function getIPAddress() {
