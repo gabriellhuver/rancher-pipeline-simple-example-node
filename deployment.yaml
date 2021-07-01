@@ -51,10 +51,10 @@ kind: Ingress
 metadata:
   name: api-ingress
   annotations:
-    allow.http: "false"
+    allow.http: "true"
 spec:
   rules:
-  - host: api.erp-dev.de
+  - host: nodejs.erp-dev.de
     http:
       paths:
         - path: /

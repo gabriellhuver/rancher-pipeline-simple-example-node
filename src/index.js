@@ -8,7 +8,7 @@ const port = 8080
 
 var networkInterfaces = os.networkInterfaces();
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     console.log('[app-teste] - ' + getIPAddress())
   res.send(getIPAddress())
 })
