@@ -17,7 +17,7 @@ app.get('/api', (req, res) => {
   res.json({
     ip: getIPAddress(),
     host: os.hostname(),
-    headers,
+    headers: req.headers,
     
   })
 })
