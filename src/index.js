@@ -22,7 +22,7 @@ app.get('/api', (req, res) => {
   })
 })
 
-pp.get('/', (req, res) => {
+app.get('/', (req, res) => {
   console.log('[app-teste] - ' + getIPAddress())
   
   res.json({
