@@ -22,6 +22,15 @@ app.get('/api', (req, res) => {
   })
 })
 
+pp.get('/', (req, res) => {
+  console.log('[app-teste] - ' + getIPAddress())
+  
+  res.json({
+    ip: getIPAddress(),
+    host: os.hostname()
+  })
+})
+
 function getIPAddress() {
   var interfaces = require('os').networkInterfaces();
   for (var devName in interfaces) {

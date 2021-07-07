@@ -54,7 +54,7 @@ metadata:
     allow.http: "false"
 spec:
   rules:
-  - host: "*.erp-dev.de"
+  - host: "health.erp-dev.de"
     http:
       paths:
         - path: /
